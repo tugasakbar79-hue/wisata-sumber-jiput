@@ -1,0 +1,307 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7f4;
+    color:#333;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#0d7a44;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    z-index:1000;
+    box-shadow:0 2px 10px rgba(0,0,0,.15);
+}
+
+.logo h2{
+    color:#fff;
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ffe66d;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("hero.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-text h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero-text h3{
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:30px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#16a34a;
+    color:white;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#14532d;
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+    padding:90px 10%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#0d7a44;
+    font-size:35px;
+}
+
+/* ===========================
+   TENTANG
+=========================== */
+
+.tentang {
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.tentang-image {
+    flex: 1;
+}
+
+.tentang-image img {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border-radius: 10px;
+}
+
+.tentang-text {
+    flex: 1;
+}
+
+.tentang-text h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.tentang-text p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+}
+/* ===========================
+   INFORMASI
+=========================== */
+
+.informasi{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    background:#eef7ef;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card i{
+    font-size:45px;
+    color:#16a34a;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:15px;
+}
+
+/* ===========================
+   GALERI
+=========================== */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* ===========================
+   UMKM
+=========================== */
+
+.umkm{
+    background:#eef7ef;
+}
+
+.umkm-card{
+    background:white;
+    margin:20px auto;
+    max-width:800px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+/* ===========================
+   MAPS
+=========================== */
+
+.maps iframe{
+    width:100%;
+    height:450px;
+    border:none;
+    border-radius:15px;
+}
+
+/* ===========================
+   KONTAK
+=========================== */
+
+.kontak{
+    text-align:center;
+}
+
+.kontak p{
+    margin:15px;
+    font-size:18px;
+}
+
+.kontak i{
+    color:#16a34a;
+    margin-right:8px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#0d7a44;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+    padding:15px;
+}
+
+nav{
+    margin-top:15px;
+}
+
+nav a{
+    display:block;
+    margin:10px 0;
+}
+
+.hero-text h1{
+    font-size:40px;
+}
+
+.hero-text h3{
+    font-size:22px;
+}
+
+.hero-text p{
+    font-size:16px;
+}
+
+section{
+    padding:70px 7%;
+}
+
+}
