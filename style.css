@@ -1,4 +1,4 @@
-/* ===========================
+ /* ===========================
    GOOGLE FONT
 =========================== */
 
@@ -155,6 +155,7 @@ section h2{
     line-height: 1.8;
     text-align: justify;
 }
+
 /* ===========================
    INFORMASI
 =========================== */
@@ -258,21 +259,10 @@ section h2{
 }
 
 /* ===========================
-   FOOTER
-=========================== */
-
-footer{
-    background:#0d7a44;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
-
-/* ===========================
    RESPONSIVE
 =========================== */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 header{
     flex-direction:column;
@@ -280,16 +270,25 @@ header{
 }
 
 nav{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:10px;
     margin-top:15px;
 }
 
 nav a{
-    display:block;
-    margin:10px 0;
+    margin:0;
+}
+
+.hero{
+    height:auto;
+    min-height:100vh;
+    padding:120px 20px 60px;
 }
 
 .hero-text h1{
-    font-size:40px;
+    font-size:38px;
 }
 
 .hero-text h3{
@@ -298,10 +297,38 @@ nav a{
 
 .hero-text p{
     font-size:16px;
+    line-height:28px;
 }
 
 section{
     padding:70px 7%;
+}
+
+.tentang{
+    flex-direction:column;
+    text-align:center;
+}
+
+.tentang-image,
+.tentang-text{
+    width:100%;
+}
+
+.tentang-image img{
+    width:100%;
+    max-width:100%;
+}
+
+.gallery{
+    grid-template-columns:1fr;
+}
+
+.informasi{
+    grid-template-columns:1fr;
+}
+
+.maps iframe{
+    height:300px;
 }
 
 }
