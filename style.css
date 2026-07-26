@@ -265,58 +265,43 @@ section h2{
 @media (max-width:768px){
 
 header{
-    flex-direction:column;
-    padding:15px;
+    padding:15px 20px;
+    flex-direction:row;
+    justify-content:space-between;
 }
 
 nav{
     display:flex;
-    flex-direction:column;
-    align-items:center;
-    gap:10px;
-    margin-top:15px;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
 }
 
 nav a{
+    font-size:14px;
     margin:0;
 }
 
 .hero{
-    height:auto;
     min-height:100vh;
-    padding:120px 20px 60px;
+    padding:100px 20px 40px;
 }
 
 .hero-text h1{
-    font-size:38px;
-}
-
-.hero-text h3{
-    font-size:22px;
+    font-size:48px;
 }
 
 .hero-text p{
-    font-size:16px;
+    font-size:17px;
     line-height:28px;
-}
-
-section{
-    padding:70px 7%;
 }
 
 .tentang{
     flex-direction:column;
-    text-align:center;
-}
-
-.tentang-image,
-.tentang-text{
-    width:100%;
 }
 
 .tentang-image img{
     width:100%;
-    max-width:100%;
 }
 
 .gallery{
@@ -326,9 +311,4 @@ section{
 .informasi{
     grid-template-columns:1fr;
 }
-
-.maps iframe{
-    height:300px;
-}
-
 }
